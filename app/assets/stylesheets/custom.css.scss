@@ -1,0 +1,44 @@
+//Override Bootstrap Styles
+$navbarBackground: #275B8C;
+$navbarLinkColor: #fff;
+
+@import "bootstrap";
+
+body { padding-top: 160px; }
+
+@import "bootstrap-responsive";
+
+/*-----COLORS-----*/
+$blue: #275B8C;
+
+/*-----HEADER-----*/
+.navbar-inner {
+	background: $blue;
+	
+	nav {
+	  position: absolute;
+	  top: 45px;
+	  right: 40px;
+	
+	  .nav li a:hover {
+		text-decoration: underline;
+	  }
+	}
+}
+
+/*-----FOOTER-----*/
+footer {
+	margin-top: 50px;
+	padding-top: 5px;
+	
+	hr.footer-break {
+		height: 1px;
+		color: $blue;
+		background-color: $blue;
+	}
+	
+	p.copyright {
+		text-align: center;
+	}
+
+}
