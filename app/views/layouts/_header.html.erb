@@ -2,11 +2,19 @@
   <div class="navbar-inner">
 	<div class="container">
 		<div id= "logo"> <%= image_tag('ca_logo_mid.png') %></div><!--#logo-->
+		<% if current_user %>
 		<nav>
 	      <ul class="nav">
-		    <li><%= link_to 'Log in', '#' %></li>
+		    <li><%= link_to 'Log out', signout_path %></li>
 	      </ul>	
 	    </nav>
+		<% else %>
+		<nav>
+	      <ul class="nav">
+		    <li><%= link_to 'Log in', '/auth/github' %></li>
+	      </ul>	
+	    </nav>
+	    <% end %>
 	</div>
   </div>
 </header>

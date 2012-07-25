@@ -11,6 +11,12 @@ body { padding-top: 160px; }
 /*-----COLORS-----*/
 $blue: #275B8C;
 
+/*-----TYPOGRAPHY-----*/
+h1 {
+	color: $blue;
+	margin-bottom: 20px;
+}
+
 /*-----HEADER-----*/
 .navbar-inner {
 	background: $blue;
@@ -41,4 +47,9 @@ footer {
 		text-align: center;
 	}
 
+}
+
+/*-----HOME-----*/
+#main-home h1 {
+	text-align: center;
 }

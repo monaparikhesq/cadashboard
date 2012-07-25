@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  email: MyString
+  blog_link: MyString
+  backpack_link: MyString
+  github_link: MyString
+  google_link: MyString
+  codemountain_link: MyString
+  shay_link: MyString
+
+two:
+  name: MyString
+  email: MyString
+  blog_link: MyString
+  backpack_link: MyString
+  github_link: MyString
+  google_link: MyString
+  codemountain_link: MyString
+  shay_link: MyString
