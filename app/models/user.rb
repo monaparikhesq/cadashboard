@@ -1,5 +1,10 @@
 class User < ActiveRecord::Base
-
+  extend FriendlyId
+  friendly_id :name
+  
+  attr_accessible :blog_link, :github_link
+  
+  
   def self.from_omniauth(auth)
     where(auth.slice("provider", "uid")).first || create_from_omniauth(auth)
   end
@@ -12,3 +17,5 @@ class User < ActiveRecord::Base
     end
   end
 end
+
+

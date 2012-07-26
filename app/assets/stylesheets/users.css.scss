@@ -1,0 +1,38 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*-----COLORS-----*/
+$blue: #275B8C;
+$red: #C2001E;
+
+/*-----USER STYLES-----*/
+
+#user-main {
+	text-align: center;
+}
+
+.row {
+	margin-bottom: 40px;
+}
+
+.span4 img {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 3px 4px 5px #000;
+	-moz-box-shadow: 3px 4px 5px #000;
+	box-shadow: 3px 4px 5px #000;
+}
+
+.span4 h2 { text-align: center; }
+
+h2 a, h2 a:visited {
+	color: $red;
+	text-decoration: underline;
+	&:hover { color: $blue; }
+}
+
+label {
+	color: $red;
+}

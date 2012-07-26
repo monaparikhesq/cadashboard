@@ -1,0 +1,12 @@
+<% provide(:title, "Settings") %>
+<h1>Account Settings</h1>
+<section id="user-main">
+<%= simple_form_for @user, :html => { class: 'form-vertical' } do |f| %>
+	<%= f.input :blog_link, placeholder: 'your blog link' %>
+	<%= f.input :github_link, placeholder: 'github.com/[username]' %>
+	<%= f.submit "Save", class: "btn btn-large btn-primary" %>
+<% end %>
+</section>
+
+
+

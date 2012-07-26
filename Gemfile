@@ -8,6 +8,8 @@ gem 'rails', '3.2.6'
 
 gem 'sqlite3'
 gem "omniauth-github", "~> 1.0.2"
+gem "simple_form", "~> 2.0.2"
+gem "friendly_id", "~> 4.0.7"
 
 # Gems used only for assets and not required
 # in production environments by default.

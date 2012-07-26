@@ -1,6 +1,7 @@
 //Override Bootstrap Styles
 $navbarBackground: #275B8C;
 $navbarLinkColor: #fff;
+$dropdownLinkBackgroundHover: #275B8C; 
 
 @import "bootstrap";
 
@@ -10,11 +11,13 @@ body { padding-top: 160px; }
 
 /*-----COLORS-----*/
 $blue: #275B8C;
+$red: #C2001E;
 
 /*-----TYPOGRAPHY-----*/
 h1 {
 	color: $blue;
 	margin-bottom: 20px;
+	text-align: center;
 }
 
 /*-----HEADER-----*/
@@ -25,10 +28,6 @@ h1 {
 	  position: absolute;
 	  top: 45px;
 	  right: 40px;
-	
-	  .nav li a:hover {
-		text-decoration: underline;
-	  }
 	}
 }
 
@@ -50,6 +49,11 @@ footer {
 }
 
 /*-----HOME-----*/
-#main-home h1 {
+#main-home {
 	text-align: center;
+	
+	.btn.btn-large.btn-primary a {
+		color: #fff;
+	}
 }
+

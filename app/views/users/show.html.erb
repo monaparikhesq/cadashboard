@@ -1,0 +1,40 @@
+<% provide(:title, "#{@user.name}") %>
+<h1>Code Academy Dashboard</h1>
+
+<section class="row">
+	<div class="span4">
+		<h2><%= link_to 'Blog', @user.blog_link, target: '_blank' %></h2>
+		<%= link_to blog_icon, @user.blog_link, target: '_blank' %>
+	</div>
+	
+	<div class="span4">
+		<h2><%= link_to 'Backpack', 'http://codeacademy.backpackit.com', target: '_blank' %></h2>
+		<%= link_to backpack_icon, 'http://codeacademy.backpackit.com', target: '_blank' %>
+	</div>
+	
+	<div class="span4">
+		<h2><%= link_to 'Github', @user.github_link, target: '_blank' %></h2>
+		<%= link_to github_icon, @user.github_link, target: '_blank' %>
+	</div>
+	
+</section>
+
+<section class="row">
+	<div class="span4">
+		<h2><%= link_to 'Google+', 'http://groups.google.com/forum/#!forum/ca-summer-2012', 
+			target: '_blank' %></h2>
+		<%= link_to google_icon, 'http://groups.google.com/forum/#!forum/ca-summer-2012', 
+			target: '_blank' %>
+	</div>
+	
+	<div class="span4">
+		<h2><%= link_to 'Code Mountain', 'http://codemountain.com', target: '_blank' %></h2>
+		<%= link_to codemtn_icon, 'http://codemountain.com', target: '_blank' %>
+	</div>
+	
+	<div class="span4">
+		<h2><%= link_to 'Shay Howe', 'http://learn.shayhowe.com', target: '_blank' %></h2>
+		<%= link_to shay_icon, 'http://learn.shayhowe.com', target: '_blank' %>
+	</div>
+	
+</section>
